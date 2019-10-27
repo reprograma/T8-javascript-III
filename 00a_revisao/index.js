@@ -4,4 +4,4 @@
 // [] alterar cor de <body>
 // [] escutar o clique do botão
 // [] criar função de alterar a cor usando rgb()
-// [] usar Math.random() e Math.floor()
+// [] usar Math.random() e Math.floor() ou parseInt()

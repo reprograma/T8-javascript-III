@@ -1,73 +1,45 @@
-// [] 1. Chamar JS no HTML
-// [] 2. Confirmar conexão com o DOM
-// [] 3. Fazer requisição GET com uso de ajax
+// fetch da imagem
+// [] adicionar a tag <script> no html
+// [] verificar se está lendo index.js
+// [] usar o método fetch() para buscar o arquivo meme.jpg
+// [] usar método .then() para transformar o dado recebido
+// [] apresentar <img>
 
+// melhorando o código
+// [] tratar o erro com método .catch()
+// [] criar uma função chamada buscaImagem()
+// [] mudar para async/await
+// [] usar arrow function
 
 console.log('fazendo fetch na imagem do meme');
 
 const botao = document.querySelector('#buscaImagem');
-// botao.addEventListener('click', fazerGET);
 
 const img = document.querySelector('#imagem');
 
 
-/* 
-function fazerGET() {
-  const http = new XMLHttpRequest();
-  // console.log(http);
-
-  http.open('GET', 'meme.jpg');
-
-  http.send();
-
-  http.onreadystatechange = function () {
-    console.log(this.readyState, this.status);
-    if (this.readyState == 4 && this.status == 200) {
-      console.log(typeof http.response);
-      const imgUrl = URL.createObjectURL(http.response.blob())
-      console.log(imgUrl);
-
-      img.src = imgUrl;
-    }
-
-  }
-}
- */
+// fetch('meme.jpg')
+//   .then(response => {
+//     console.log(response);
+//     return response.blob();
+//   })
+//   .then(blob => {
+//     console.log(blob);
+//     document.getElementById('imagm').src = URL.createObjectURL(blob);
+//     return ('Imagem criada com sucesso')
+//   })
+//   .catch(error => {
+//     console.log('Erro ao criar a imagem!!!')
+//     console.error(error);
+//   });
 
 
-buscaImg = () => {
-  fetch('meeme.jpg')
-    .then(response => {
-      console.log(response);
-      return response.blob();
-    })
-    .then(blob => {
-      console.log(blob);
-      document.getElementById('imagem').src = URL.createObjectURL(blob);
-    })
-    .catch(error => {
-      console.log('erro!!!')
-      console.error(error);
-
-    });
-}
-
-botao.addEventListener('click', buscaImg().then(suc => console.log('uhul!')).catch(err => console.log('erroooooou!')));
-
-
-/* 
-catchImage()
-  .then(response => {
-    console.log('yay!');
-  })
-  .catch(error => {
-    console.log('error!');
-    console.error(error);
-  })
-
-async function catchImage() {
+buscaImagem = async () => {
   const response = await fetch('meme.jpg');
   const blob = await response.blob();
-  document.getElementById('imagem').src = URL.createObjectURL(blob);
+  document.querySelector('#imagem').src = URL.createObjectURL(blob);
 }
- */
+
+buscaImagem()
+  .then(res => console.log('yay!'))
+  .catch(e => console.log('errou!'))

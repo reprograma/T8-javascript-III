@@ -1,15 +1,6 @@
 {
   "data": [{
-      "nome": "Cíntia",
-      "imagem": "./img/cintia.jpg"
-    },
-    {
-      "nome": "Cíntia Fumi",
-      "imagem": "./img/cintiafumi.jpg"
-    },
-    {
-      "nome": "Fucinya",
-      "imagem": "./img/fucinya.jpg"
-    }
-  ]
+    "nome": "Cíntia Fumi",
+    "imagem": "./img/cintiafumi.jpeg"
+  }]
 }
