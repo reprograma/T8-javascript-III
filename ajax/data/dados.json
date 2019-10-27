@@ -1,0 +1,11 @@
+{
+  "data": [{
+      "nome": "Cíntia Fumi",
+      "imagem": "./img/cintiafumi.jpeg"
+    },
+    {
+      "nome": "Fucinya",
+      "imagem": "./img/fucinya.jpeg"
+    }
+  ]
+}
