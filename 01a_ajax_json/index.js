@@ -1,6 +1,6 @@
 // [] instanciar XMLHttpRequest()
-// [] o que fazer depois que receber a resposta
 // [] fazer a requisição com open() e send()
+// [] o que fazer depois que receber a resposta
 // [] tratar response
 
 const div = document.querySelector('#root');
