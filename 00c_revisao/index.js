@@ -13,19 +13,16 @@
 // [x] arrow function
 // [x] template string
 
+// 3. adicinando classe
+// [x] criar classe e chamar
+
 const body = document.body;
 const botao = document.getElementById('trocaCor');
 
 body.style.backgroundColor = 'purple';
 botao.addEventListener('click', mudaBody)
 
-// body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-
 function mudaBody() {
-  // const mudaC = new MudaCor()
-  body.style.backgroundColor = new MudaCor().geraRGB();
+  const mudaC = new MudaCor()
+  body.style.backgroundColor = mudaC.geraRGB();
 }
-
-// console.log('mudaC', mudaC);
-// console.log('r', mudaC.r);
-// console.log(mudaC.geraRGB());

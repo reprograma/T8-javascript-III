@@ -1,7 +1,7 @@
-// [] instanciar XMLHttpRequest()
-// [] fazer a requisição com open() e send()
-// [] o que fazer depois que receber a resposta
-// [] tratar response
+// [x] instanciar XMLHttpRequest()
+// [x] o que fazer depois que receber a resposta
+// [x] fazer a requisição com open() e send()
+// [x] tratar response
 
 const div = document.querySelector('#root');
 const img = document.createElement('img');
