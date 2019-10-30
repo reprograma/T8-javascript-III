@@ -12,11 +12,9 @@ function mostraGif() {
     const response = request.response;
     const json = JSON.parse(response);
 
-    const body = document.body;
-    body.innerHTML = `
-      <img src=${json.data[0].images.original.url}>
-      <img src=${json.data[1].images.original.url}>
-      <img src=${json.data[2].images.original.url}>
-   `
+    const imgUrl = json.data.images.original.url;
+
+    const img = document.getElementById('imagem');
+    img.src = imgUrl;
   }
 }
